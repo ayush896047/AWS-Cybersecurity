@@ -1,4 +1,7 @@
 version: 0.1
+env:
+  secrets-manager:
+    TOKEN: SecretNameSonar:TokenForSonar
 phases:
   build:
     commands:
@@ -7,4 +10,4 @@ phases:
         -Dsonar.projectKey=javaprojectawsayush \
         -Dsonar.organization=javaprojectawsayush \
         -Dsonar.host.url=https://sonarcloud.io \
-        -Dsonar.login=089b2be3ce6ff68296a26eb8de502d718db749d1
+        -Dsonar.login=$TOKEN

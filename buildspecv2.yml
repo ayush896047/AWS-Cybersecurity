@@ -1,0 +1,10 @@
+version: 0.1
+phases:
+  build:
+    commands:
+      - |
+        mvn verify sonar:sonar \
+        -Dsonar.projectKey=javaprojectawsayush \
+        -Dsonar.organization=javaprojectawsayush \
+        -Dsonar.host.url=https://sonarcloud.io \
+        -Dsonar.login=089b2be3ce6ff68296a26eb8de502d718db749d1
